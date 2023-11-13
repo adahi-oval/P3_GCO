@@ -45,3 +45,36 @@
   max-width: 250px;
   margin-bottom: 20px;
 }
+
+.container-camion {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 20px;
+  overflow: auto;
+  max-height: 200px;
+  border: 2px solid #5ba589;
+  border-radius: 5px;
+}
+
+.camion {
+  background-color: #f5f5f5;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.camion h2 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #333;
+}
+
+.camion .disponibilidad {
+  font-weight: bold;
+}
+
+.camion .intervalo {
+  color: #888;
+}
