@@ -78,3 +78,63 @@
 .camion .intervalo {
   color: #888;
 }
+
+#textoValoracion {
+  width: 100%; /* Hace que el textarea ocupe todo el ancho del contenedor */
+  max-width: 95%; /* Asegura que no se salga del contenedor */
+  padding: 10px; /* Espaciado interno para la comodidad al escribir */
+  margin-top: 10px; /* Espacio superior */
+  margin-bottom: 20px; /* Espacio inferior */
+  border: 1px solid #cccccc; /* Borde sutil */
+  border-radius: 5px; /* Bordes redondeados */
+  font-family: Arial, sans-serif; /* Tipografía */
+  resize: vertical; /* Permite al usuario cambiar el tamaño verticalmente, no horizontalmente */
+}
+
+/* Estilos para las estrellas */
+.estrellas-valoracion {
+  direction: rtl; /* Cambia la dirección para que las estrellas se llenen de derecha a izquierda */
+}
+
+.estrellas-valoracion > input {
+  display: none; /* Oculta los radio buttons */
+}
+
+.estrellas-valoracion > label {
+  display: inline-block;
+  cursor: pointer;
+  font-size: 32px; /* Tamaño de las estrellas */
+  color: #444; /* Color de las estrellas vacías */
+}
+
+.estrellas-valoracion > label:before {
+  content: "★"; /* Carácter de estrella */
+}
+
+.estrellas-valoracion > input:checked ~ label {
+  color: #f5b301; /* Color de las estrellas llenas */
+}
+
+.estrellas-valoracion > label:hover,
+.estrellas-valoracion > label:hover ~ label {
+  color: #f5b301; /* Color al pasar el mouse sobre las estrellas */
+}
+
+#rutaDeseada {
+  width: 100%;
+  max-width: 95%;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  font-family: Arial, sans-serif;
+  resize: vertical;
+}
+
+.ruta {
+  max-width: 100%; /* Asegura que la imagen no sea más ancha que su contenedor */
+  height: auto; /* Mantiene la relación de aspecto de la imagen */
+  display: block; /* Asegura que la imagen no esté en línea con otros elementos */
+  margin: 0 auto; /* Centra la imagen en el contenedor */
+}

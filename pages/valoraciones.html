@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/stylesheet.css">
+    <title>Valoraciones - LogiAPP</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Valoraciones</h1>
+        <div class="estrellas-valoracion">
+            <input type="radio" id="star5" name="rate" value="5" />
+            <label for="star5" title="5 estrellas"></label>
+            <input type="radio" id="star4" name="rate" value="4" />
+            <label for="star4" title="4 estrellas"></label>
+            <input type="radio" id="star3" name="rate" value="3" />
+            <label for="star3" title="3 estrellas"></label>
+            <input type="radio" id="star2" name="rate" value="2" />
+            <label for="star2" title="2 estrellas"></label>
+            <input type="radio" id="star1" name="rate" value="1" />
+            <label for="star1" title="1 estrella"></label>
+        </div>
+        
+
+        <h2>Escribe tu valoración:</h2>
+        <textarea id="textoValoracion" name="textoValoracion" rows="4" cols="50" placeholder="Escribe aquí tu valoración..."></textarea>
+        <p><button type="button" onclick="alert('Gracias por tu valoración!')">Enviar Valoración</button>
+        <p><a href="../index.html" class="boton-pagina">Atrás</a>
+    </div>
+</body>
+</html>
